@@ -7,11 +7,11 @@
 
 // ---- UPDATE THESE VALUES: ----
 
-var lastChapter = 0; // Most recent chapter.
-var lastPage = [27, 0]; // Most recent page for each chapter.
+var lastAct = 0; // Most recent chapter.
+var lastPage = [10, 0]; // Most recent page for each chapter.
 var lastBlog = 0; // Temporary Fix. Eventually calculate most recent.
 
-var indexURL = "https://ashwoodcross.github.io";
+var indexURL = "https://fourcomic.github.io";
 var storyURL = "story.html";
 var archiveURL = "archive.html";
 var aboutURL = "about.html";
@@ -19,62 +19,62 @@ var extrasURL = "extras.html";
 
 // ---- UPDATE THESE VALUES: ----
 
-var c = parseInt(getVariable('c'));
+var a = parseInt(getVariable('a'));
 var p = parseInt(getVariable('p'));
 var s = getVariable('s');
-var clampC = Math.max(0, Math.min(c, lastChapter));
-var clampP = Math.max(0, Math.min(p, lastPage[clampC]));
+var clampA = Math.max(0, Math.min(a, lastAct));
+var clampP = Math.max(0, Math.min(p, lastPage[clampA]));
 
 if (page == "index") {
 	// alert ("Index Page");
-	c = lastChapter;
-	p = lastPage[c];
+	a = lastAct;
+	p = lastPage[a];
 }
-else if (c != clampC || p != clampP) {
+else if (a != clampA || p != clampP) {
 	// alert ("Not Index Page")
-	c = clampC;
+	a = clampA;
 	p = clampP;
-	if (c >= lastChapter && p+1 >= lastPage[c]) {
+	if (a >= lastAct && p+1 >= lastPage[a]) {
 		window.location.href = indexURL;
 	}
 	else {
-		window.location.href = storyURL + "?c="+ c +"&p="+ p;
+		window.location.href = storyURL + "?a="+ a +"&p="+ p;
 	}
 }
 
-var disqusIdentifier = "Chapter "+ c +", Page "+ p;
+var disqusIdentifier = "Act "+ a +", Page "+ p;
 
-var prevChapter = indexURL;
-var nextChapter = indexURL;
-var prevPage = indexURL;
-var nextPage = indexURL;
+var first = indexURL;
+var back = indexURL;
+var next = indexURL;
+var last = indexURL;
 
-if (c <= 0) {
-	prevChapter = storyURL + "?c=0&p=0";
+if (a <= 0) {
+	first = storyURL + "?a=0&p=0";
 	if (p <= 0) {
-		prevPage = storyURL + "?c=0&p=0"; }
+		back = storyURL + "?a=0&p=0"; }
 	else {
-		prevPage = storyURL + "?c=0&p="+ (p-1); } }
+		back = storyURL + "?a=0&p="+ (p-1); } }
 else {
 	if (p <= 0) {
-		prevChapter = storyURL + "?c="+ (c-1) +"&p=0";
-		prevPage = storyURL + "?c="+ (c-1) +"&p="+ lastPage[c-1]; }
+		first = storyURL + "?a="+ (a-1) +"&p=0";
+		back = storyURL + "?a="+ (a-1) +"&p="+ lastPage[a-1]; }
 	else {
-		prevChapter = storyURL + "?c="+ c +"&p=0";
-		prevPage = storyURL + "?c="+ c +"&p="+ (p-1); } }
+		first = storyURL + "?a="+ a +"&p=0";
+		back = storyURL + "?a="+ a +"&p="+ (p-1); } }
 
-if (c >= lastChapter) {
-	nextChapter = indexURL;
-	if ((p+1) >= lastPage[lastChapter] || lastPage[lastChapter] == null) {
-		nextPage = indexURL; }
+if (a >= lastAct) {
+	next = indexURL;
+	if ((p+1) >= lastPage[lastAct] || lastPage[lastAct] == null) {
+		next = indexURL; }
 	else {
-		nextPage = storyURL + "?c="+ c +"&p="+ (p+1); } }
+		next = storyURL + "?a="+ a +"&p="+ (p+1); } }
 else {
-	nextChapter = storyURL + "?c="+ (c+1) +"&p="+ 0;
-	if (p >= lastPage[c]) {
-		nextPage = storyURL + "?c="+ (c+1) +"&p="+ 0; 	}
+	last = storyURL + "?a="+ (a+1) +"&p="+ 0;
+	if (p >= lastPage[a]) {
+		next = storyURL + "?a="+ (a+1) +"&p="+ 0; 	}
 	else {
-		nextPage = storyURL + "?c="+ c +"&p="+ (p+1); } }
+		next = storyURL + "?a="+ a +"&p="+ (p+1); } }
 
 // Before page content is loaded:
 // IF s has a value, load s.html.
