@@ -1,11 +1,31 @@
 @font-face {
-	font-family: pen;
-	src: url(../font/ComingSoon.ttf);
+	font-family: montserrat;
+	src: url("../font/Montserrat.otf");
 }
 
 @font-face {
-	font-family: marker;
-	src: url(../font/PermanentMarker.ttf);
+	font-family: junkos-typewriter;
+	src: url("../font/JunkosTypewriter.ttf");
+}
+
+@font-face {
+	font-family: traveling-typewriter;
+	src: url("../font/TravelingTypewriter.ttf");
+}
+
+@font-face {
+	font-family: comming-soon;
+	src: url("../font/ComingSoon.ttf");
+}
+
+@font-face {
+	font-family: architects-daughter;
+	src: url("../font/ArchitectsDaughter.ttf");
+}
+
+@font-face {
+	font-family: permanent-marker;
+	src: url("../font/PermanentMarker.ttf");
 }
 
 * {
@@ -15,13 +35,12 @@
 }
 
 a {
-	color: #000;
-	box-sizing: border-box;
+	color: #CCF;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #000;
+	color: #AAF
 }
 
 a:hover, a:focus {
@@ -29,60 +48,225 @@ a:hover, a:focus {
 	cursor: pointer;
 }
 
+p {
+	padding-top: .25em;
+	padding-bottom: .25em;
+}
+
 body {
 	margin: auto;
-	padding: 24px;
-	background: #668099;
+	padding-top: 2em;
+	background: #367ABD url("../ui/wallBG.png");
+}
+
+h1 {
+	font-family: junkos-typewriter;
+	font-size: 6em;
+}
+
+h2 {
+	font-family: junkos-typewriter;
+	font-size: 2em;
+}
+
+h3 {
+	font-family: architects-daughter;
+	font-size: 1.6667em;
+}
+
+hr {
+	border-top: 4px double #000;
+	margin-top: .25em;
+	margin-bottom: .25em;
 }
 
 .image {
 	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
 	width: 1051px;
 	height: 486px;
 	background-image: url("../ui/image.png");
 }
 
-.dialogue {
+.dialogue-image {
 	margin: auto;
-	padding: 60px;
+	padding: 3.5em;
 	width: 1024px;
 	height: 293px;
 	background-image: url("../ui/dialogue.png");
-	font-family: pen;
-	font-size: 16pt;
+	font-family: architects-daughter;
+}
+
+.dialogue-wrapper {
+	position: relative;
+	margin: auto;
+	background-color: transparent;
+}
+
+.dialogue-wrapper::before {
+	position: absolute;
+	content: " ";
+	width: 352px;
+	height: 42px;
+	top: -20px;
+	left: calc(50% - 176px);
+	z-index: +1;
+	background-image: url("../ui/horizontal_tape.png");
+}
+
+.dialogue {
+	position: relative;
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding: 2em;
+	max-width: 800px;	
+	font-family: architects-daughter;
+	background-color: #DDD;
+	border: solid 0.25em #F93;
+	border-radius: 2em;
+	box-shadow: 2px 2px 8px;
+}
+
+.dialogue > h1 {
+	display: inline-block;
+	padding: 0.25em;
+	padding-left: 2em;
+	padding-right: 2em;
+	margin-bottom: 1em;
+	width: auto;
+	font-family: permanent-marker;
+	font-size: 1.3333em;
+	background-color: #F93;
+	border: solid 0.0625em;	
+}
+
+.tape {
+	position: relative;
+	margin: auto; 
+	text-align: center;
+	top: -50px;
+}
+
+.quote {
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding: 2em;
+	max-width: 800px;	
+	font-family: traveling-typewriter;
+	background-color: #ECA;
+	border: solid 0.0625em;
+	box-shadow: 2px 2px 8px;
+}
+
+.quote > h1 {
+	padding-bottom: 0.25em;
+	font-family: traveling-typewriter;
+	font-size: 1.3333em;
+}
+
+.quote > h2 {
+	padding-bottom: .5em;
+	font-family: traveling-typewriter;
+	font-size: 1em;
+}
+
+.quote-wrapper {
+	position: relative;
+	margin: auto;
+	background-color: transparent;
+}
+
+.quote-wrapper::before {
+	position: absolute;
+	content: " ";
+	width: 352px;
+	height: 42px;
+	top: -20px;
+	left: calc(50% - 176px);
+	z-index: +1;
+	background-image: url("../ui/horizontal_tape.png");
 }
 
 .name-tag {
 	display: inline-block;
-	padding: 6px;
-	padding-left: 32px;
-	padding-right: 32px;
-	margin-bottom: 24px;
+	padding: 0.5em;
+	padding-left: 2em;
+	padding-right: 2em;
+	margin-bottom: 1em;
 	width: auto;
-	font-family: marker;
-	font-size: 18pt;
+	font-family: permanent-marker;
+	font-size: 1.3333em;
 	background-color: #FF9933;
-	border: solid 1px;
+	border: solid 0.0625em;
+}
+
+.blog {
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding: 2em;
+	max-width: 1000px;
+	font-family: montserrat;
+	background-color: #DDD;
+	border-radius: 2em;
+	border-color: #000;
+	color: #000;
+	border: solid 0.0625em;
+	box-shadow: 2px 2px 8px;
+}
+
+.blog > h1 {
+	padding-bottom: 0.25em;
+	font-size: 1.3333em;
+	font-family: montserrat;
+	font-weight: bold;
+}
+
+.blog > h2 {
+	padding-bottom: .5em;
+	font-size: 1em;
+	font-family: montserrat;
+	color: #888;
+}
+
+#preloader {
+	display: none;
+}
+
+#footer {
+	margin: auto;
+	padding: 0.5em;
+	text-align: center;
+	font-weight: bold;
+	font-family: comming-soon;
+	background-color: #FFF;
 }
 
 #banner {
 	margin: auto;
+	padding-bottom: 1em;
 	text-align: center;
-	width: 800px;
-	font-family: marker;
-	font-size: 32pt;	
 }
 
-#page-nav {
-	display: inline-block;
-	width: 100%;
+.page-nav {
 	margin: auto;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	max-width: 800px;
 	text-align: center;
-	font-family: marker;
-	font-size: 16pt;
 }
 
-.hide { display: none !important; }
+.prompt {
+	text-align: center;
+	font-family: architects-daughter;
+}
+
+.hide {
+	display: none !important;
+}
 
 /*---------------------*/
 /* LAYOUT DEFINITIONS: */
