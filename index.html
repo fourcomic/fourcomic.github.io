@@ -22,6 +22,7 @@
 <body>
 	<!-- Preloads and caches all image assets -->
 	<div id="preloader">
+		<img src="ui/wallBG.png">
 		<img src="ui/dialogue.png" width="1" height="1" alt="">
 		<img src="ui/image.png" width="1" height="1" alt="">
 		<img src="image/Act_0/Updoot_0/thread_logo.png" width="1" height="1" alt="">
@@ -37,42 +38,61 @@
 		<!-- Banner Zone -->
 		<header>
 			<div id="banner">
-				<a href="https://fourcomic.github.io/index.html" rel="start home"><img src="image\Act_0\Updoot_0\thread_logo.png" alt=""></a>
+				<a href="https://fourcomic.github.io/index.html" rel="start home"><img class="img" src="image\Act_0\Updoot_0\thread_logo.png" alt=""></a>
 			</div>
 		</header>
 
+		<!-- Link Navbar -->
+		<nav class="link-bar">
+			<span class="nav-img column-1-5"><a href="#"><img src="ui/link_about.png"></a></span>
+			<span class="nav-img column-1-5"><a href="#"><img src="ui/link_archive.png"></a></span>
+			<span class="nav-img column-1-5"><a href="#"><img src="ui/link_twitter.png"></a></span>
+			<span class="nav-img column-1-5"><a href="#"><img src="ui/link_bonus.png"></a></span>
+		</nav>
+
 		<!-- Upper Navbar -->
-		<nav class="page-nav">
+		<nav class="nav-bar">
 			<script type="text/javascript" src="script/navbar.js"></script>
 		</nav>
 
 		<!-- Page Content -->
 		<div id="content">
-			<div class="image">
-				<img src="image\Act_0\Updoot_0\protag_arrives.png">
-			</div>
+			<img class="img" src="image\Act_0\Updoot_0\protag_arrives.png">
 
 			<div class="quote-wrapper">
 				<div class="quote">
 					<h1>Somebirdy:</h1>
-					<h2>July 7th 2017</h2>
+					<h2>July 7th 2017</h1>
 					<hr>
-					<p>"...once told me the world was gonna roll me. I ain't the sharpest beak in the nest."</p>
-					
+					<p>...once told me the world was gonna roll me. I ain't the sharpest beak in the nest.</p>
 				</div>
 			</div>
 
-			<div class="dialogue-wrapper">	
-				<div class="dialogue">
+			<div class="text-aubrey-wrapper">	
+				<div class="text-aubrey">
 					<h1>Aubrey:</h1>
 					<p>Lorem ipsum quick brown fox jumps over the best of times it was the worst of etc etc etc?</p>
+				</div>
+			</div>
+
+			<div class="text-wrapper">	
+				<div class="text">
+					<p>An echo of a memory permeates the void and shit. It's pretty god damned weird and cool. Check it down, yo. The shit is bonkers as hell.</p>
+				</div>
+			</div>
+
+			<div class="prompt-wrapper">	
+				<div class="prompt">
+					<h1>FILL IN THE BLANKS...</h1>
+					<p>My name is ***** **. I'm 11 years old.<br>My favorite color is ____ and my favorite subject is ____.</p>
+					<p>Last week, my parents took me and my best friend, ____, to the movies. No-one believes me—not even my parents—but something strange happened in the theater that day...</p>
 				</div>
 			</div>
 
 		</div>
 
 		<!-- Lower Navbar -->
-		<nav class="page-nav">
+		<nav class="nav-bar">
 			<script type="text/javascript" src="script/navbar.js"></script>
 		</nav>
 
@@ -81,7 +101,7 @@
 			<div class="blog">
 				<h1>Act 0, Page #:</h1>
 				<h2>July 7th 2017</h2>
-				<p>Author comments goes here</p>
+				<p>Author comments goes here.</p>
 			</div>
 		</div>
 
