@@ -11,13 +11,31 @@ var lastAct = 0; // Most recent chapter.
 var lastPage = [10, 0]; // Most recent page for each chapter.
 var lastBlog = 0; // Temporary Fix. Eventually calculate most recent.
 
+// ---- UPDATE THESE VALUES: ----
+
+// Default Nav URLs and button images
+
 var indexURL = "https://fourcomic.github.io";
 var storyURL = "story.html";
 var archiveURL = "archive.html";
 var aboutURL = "about.html";
 var extrasURL = "extras.html";
 
-// ---- UPDATE THESE VALUES: ----
+var banner = "ui/battle_header.png";
+var nav_first = "ui/battle_first.png";
+var nav_back = "ui/battle_back.png";
+var nav_next = "ui/battle_next.png";
+var nav_last = "ui/battle_last.png";
+var nav_divider = "ui/battle_divider.png";
+
+/*
+var banner = "ui/thread_header.png";
+var nav_first = "ui/nav_first.png";
+var nav_back = "ui/nav_back.png";
+var nav_next = "ui/nav_next.png";
+var nav_last = "ui/nav_last.png";
+var nav_divider = "ui/nav_divider.png";
+*/
 
 var a = parseInt(getVariable('a'));
 var p = parseInt(getVariable('p'));
@@ -104,3 +122,9 @@ function getVariable(variable)
 	}
 	return(-1);
 }
+
+// Navbar Links:
+$('.nav-first').click(function() {
+	alert ("Redirect Attempt");
+	window.location.href = "http://stackoverflow.com";
+});

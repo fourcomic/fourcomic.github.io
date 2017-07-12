@@ -1,0 +1,287 @@
+
+@font-face {
+	font-family: press-start-k;
+	src: url("../font/PressStartK.ttf");
+}
+
+body {
+	background: #F58DB6;
+	line-height: 1.125em;
+}
+
+.banner {
+	image-rendering: pixelated;
+	width : 100%;
+	margin-bottom: 1em
+}
+
+.content {
+	margin: auto;
+	max-width: 1000px;
+}
+
+.nav-bar {
+	margin: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	width: 80%;
+}
+
+.nav-bar-btn {
+	display: inline-block;
+	width: 20%;	
+}
+
+.nav-first {
+	image-rendering: pixelated;
+	width: 16%;
+}
+
+.nav-back {
+	image-rendering: pixelated;
+	width: 16%;
+}
+
+.nav-next {
+	image-rendering: pixelated;
+	width: 16%;
+}
+
+.nav-last {
+	image-rendering: pixelated;
+	width: 16%;
+}
+
+.nav-divider {
+	image-rendering: pixelated;
+	width: 4%;
+}
+
+/* Top Tape Overlays */
+.text::before, .text-aubrey::before, .quote::before, .prompt::before {
+	display: none;
+	background: none;
+}
+
+.text {
+	position: relative;
+	margin: auto;
+	padding: 1.5em;
+	border: solid 0.3333em #85E9BE;
+	border-radius: .25em;
+}
+
+.text > h1 {
+	margin: auto;
+	width: auto;
+	color: #85E9BE;
+	text-align: left;
+	font-family: press-start-k;
+	font-size: 1em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.text > h1::before {
+	content: "["
+}
+
+.text > h1::after {
+	content: "]"
+}
+
+.text-wrapper {
+	position: relative;
+	width: 60%;
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	color: #FFF;
+	background: #000;
+	border: solid 0.1667em #000;
+	border-radius: 0.4967em;
+	font-family: press-start-k;
+	box-shadow: none;
+}
+
+.text-aubrey {
+	position: relative;
+	margin: auto;
+	padding: 2em;	
+	border: solid 0.3333em #F2A433;
+	border-radius: 2em;
+}
+
+.text-aubrey-wrapper {
+	position: relative;
+	width: 80%;	
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	color: #FFF;
+	background: #000;
+	border: solid 0.1667em #000;
+	border-radius: 2.1667em;
+	font-family: press-start-k;
+	box-shadow: none;
+}
+
+.text-aubrey > h1 {
+	margin: auto;
+	width: auto;
+	color: #F2A433;
+	text-align: left;
+	font-family: press-start-k;
+	font-size: 1em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.text-aubrey > h1::before {
+	content: "["
+}
+
+.text-aubrey > h1::after {
+	content: "]"
+}
+
+.quote {
+	position: relative;
+	margin: auto;
+	padding: 1.5em;
+	border: solid 0.3333em #FFF;
+	border-radius: .25em;
+}
+
+.quote-wrapper {
+	position: relative;
+	margin: auto;
+	margin-top: 2.3333em;
+	margin-bottom: 2em;
+	padding: 0em;
+	max-width: 70%;
+	color: #FFF;
+	background: #000;
+	border: solid 0.1667em #000;
+	border-radius: 0.4967em;
+	font-family: press-start-k;
+	box-shadow: none;
+}
+
+.quote > h1 {
+	padding-bottom: 0em;
+	font-family: press-start-k;
+	font-weight: normal;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.quote > h1::before {
+	content: "[";
+}
+
+.quote > h1::after	 {
+	content: "]";
+}
+
+.quote > h2 {
+	padding-bottom: .5em;
+	text-indent: 1em;
+	font-family: press-start-k;
+	font-weight: normal;
+	font-size: 1em;
+	text-indent: 0px;
+	text-transform: uppercase;
+}
+
+.quote > h2::before {
+	content: "> ";
+}
+
+.quote > hr {
+	border: none;
+	border-top: 4px dotted #FFF;
+	margin-top: .25em;
+	margin-bottom: 1em;
+}
+
+.prompt {
+	position: relative;
+	margin: auto;
+	padding: 0em;
+	padding-bottom: 1.5em;
+	border: solid 0.3333em #FFF;
+	border-radius: .25em;
+}
+
+.prompt-wrapper {
+	position: relative;
+	margin: auto;
+	width: 60%;	
+	margin-top: 2em;
+	margin-bottom: 2em;
+	color: #FFF;
+	background: #000;
+	border: solid 0.1667em #000;
+	border-radius: 0.4967em;
+	text-align: left;
+	font-family: press-start-k;
+	box-shadow: none;
+}
+
+.prompt > h1 {
+	margin: auto;
+	margin-bottom: 1.5em;
+	padding: 1em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	color: #000;
+	background-color: #FFF;
+	text-align: center;
+	font-weight: normal;
+	font-size: 1em;
+	font-family: press-start-k;
+}
+
+.prompt > p {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+
+}
+
+.blog {
+	margin: auto;
+	padding: 1.5em;
+	margin: .25em;
+	border: solid 0.1667em #000;
+}
+
+.blog-wrapper {
+	margin: auto;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	max-width: 1000px;
+	background-color: #FFF;
+	border: solid 0.1667em #000;
+	border-radius: 0.4967em;
+	color: #000;
+	font-family: press-start-k;
+	box-shadow: none;
+}
+
+.blog > h1 {
+	padding-bottom: 0em;
+	font-size: 1em;
+	font-family: press-start-k;
+	font-weight: normal;
+}
+
+.blog > h2 {
+	padding-top: 0em;
+	padding-bottom: .25em;
+	font-size: 1em;
+	text-indent: 1em;
+	font-family: press-start-k;
+	font-weight: normal;
+	color: #888;
+}

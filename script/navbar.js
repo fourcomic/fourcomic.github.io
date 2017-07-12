@@ -3,9 +3,10 @@
 // TODO: Add hover images and/or make backgrounds defined in CSS.
 // TODO: Dynamically assign image SRC, or define as CSS BGs.
 
-//document.write('<td><h1>'+ p +'</h1></td>');
-
-document.write('<span class="column-1-5"><a href="'+ first +'" rel="first prev chapter"><img src="ui/nav_first.png"></a></span>');
-document.write('<span class="column-1-5"><a href="'+ back +'" rel="prev"><img src="ui/nav_back.png"></a></span>');
-document.write('<span class="column-1-5"><a href="'+ next +'" rel="next"><img src="ui/nav_next.png"></a></span>');
-document.write('<span class="column-1-5"><a href="'+ last +'" rel="last next chapter"><img src="ui/nav_last.png"></a></span>');
+document.write('<span class="nav-bar-btn"><a href="'+ first +'" rel="first prev chapter"><img class="nav_first" src="'+ nav_first +'"></a></span>');
+document.write('<span class="nav-divider"><img class="nav_divider" src="'+ nav_divider +'"></span>');
+document.write('<span class="nav-bar-btn"><a href="'+ back +'" rel="prev"><img class="nav_back" src="'+ nav_back +'"></a></span>');
+document.write('<span class="nav-divider"><img class="nav_divider" src="'+ nav_divider +'"></span>');
+document.write('<span class="nav-bar-btn"><a href="'+ next +'" rel="next"><img class="nav_next" src="'+ nav_next +'"></a></span>');
+document.write('<span class="nav-divider"><img class="nav_divider" src="'+ nav_divider +'"></span>');
+document.write('<span class="nav-bar-btn"><a href="'+ last +'" rel="last next chapter"><img class="nav_last" src="'+ nav_last +'"></a></span>');
