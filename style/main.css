@@ -271,6 +271,7 @@ ul, li {
 .prompt {
 	position: relative;
 	margin: auto;
+	padding-top: .75em;
 }
 
 .prompt-wrapper {
@@ -278,7 +279,8 @@ ul, li {
 	margin: auto;
 	margin-top: 2em;
 	margin-bottom: 2em;
-	padding: 25px 60px 26px 60px;
+	padding: .5em 60px 26px 60px;
+	padding-top: .5em;
 	width: 60%;	
 	color: #000;
 	background: url("../ui/linedpaper_body.png") left top;

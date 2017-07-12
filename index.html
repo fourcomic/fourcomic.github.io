@@ -13,15 +13,15 @@
 	<link rel="stylesheet" type="text/css" href="style/main.css">
 
 	<!-- Javascript -->
+	<script type="text/javascript">var page = "index";</script>
 	<script type="text/javascript" src="script/jquery-3.2.1.js"></script>
-	<script type="text/javascript"> var page = "index"; </script>
 	<script type="text/javascript" src="script/main.js"></script>
 
 </head>
 
 <body>
 	<!-- Preloads and caches all image assets -->
-	<div id="preloader">
+	<div class="preloader">
 		<img src="ui/wallBG.png">
 		<img src="ui/dialogue.png" width="1" height="1" alt="">
 		<img src="ui/image.png" width="1" height="1" alt="">
@@ -36,47 +36,41 @@
 	<section>
 
 		<!-- Banner Zone -->
-		<header>
-			<div id="banner">
-				<a href="https://fourcomic.github.io/index.html" rel="start home"><img class="img" src="image\Act_0\Updoot_0\thread_logo.png" alt=""></a>
+		<header class="w1000">
+			<div class="banner">
+				<script type="text/javascript" src="script/banner.js"></script>
 			</div>
 		</header>
 
-		<!-- Link Navbar -->
-		<nav class="link-bar">
-			<span class="nav-img column-1-5"><a href="#"><img src="ui/link_about.png"></a></span>
-			<span class="nav-img column-1-5"><a href="#"><img src="ui/link_archive.png"></a></span>
-			<span class="nav-img column-1-5"><a href="#"><img src="ui/link_twitter.png"></a></span>
-			<span class="nav-img column-1-5"><a href="#"><img src="ui/link_bonus.png"></a></span>
-		</nav>
-
 		<!-- Upper Navbar -->
-		<nav class="nav-bar">
+		<div class="nav-bar">
 			<script type="text/javascript" src="script/navbar.js"></script>
-		</nav>
+		</div>
 
 		<!-- Page Content -->
-		<div id="content">
-			<img class="img" src="image\Act_0\Updoot_0\protag_arrives.png">
+		<div class="content">
+		
+			<img class="panel" src="image\Act_0\Updoot_10\battlestart.png">
 
 			<div class="quote-wrapper">
 				<div class="quote">
-					<h1>Somebirdy:</h1>
+					<h1>Somebirdy</h1>
 					<h2>July 7th 2017</h1>
 					<hr>
 					<p>...once told me the world was gonna roll me. I ain't the sharpest beak in the nest.</p>
 				</div>
 			</div>
-
-			<div class="text-aubrey-wrapper">	
+			
+			<div class="text-aubrey-wrapper">
 				<div class="text-aubrey">
-					<h1>Aubrey:</h1>
+					<h1>Aubrey</h1>
 					<p>Lorem ipsum quick brown fox jumps over the best of times it was the worst of etc etc etc?</p>
 				</div>
 			</div>
 
 			<div class="text-wrapper">	
 				<div class="text">
+					<h1>System</h1>
 					<p>An echo of a memory permeates the void and shit. It's pretty god damned weird and cool. Check it down, yo. The shit is bonkers as hell.</p>
 				</div>
 			</div>
@@ -96,18 +90,28 @@
 			<script type="text/javascript" src="script/navbar.js"></script>
 		</nav>
 
-		<!-- Blog Zone -->
-		<div class="blog-wrapper">
-			<div class="blog">
-				<h1>Act 0, Page #:</h1>
-				<h2>July 7th 2017</h2>
-				<p>Author comments goes here.</p>
+		<!-- 2 Column -->
+		<div>
+
+			<!-- Sidebar -->
+			<div class="sidebar">
+				
 			</div>
+
+			<!-- Blog Zone -->
+			<div class="blog-wrapper">
+				<div class="blog">
+					<h1>Act 0, Page #:</h1>
+					<h2>July 7th 2017</h2>
+					<p>Author comments goes here.</p>
+				</div>
+			</div>
+
 		</div>
 
 		<!-- Banner Zone -->
 		<footer>
-			<div id="footer">
+			<div class="footer">
 				<p>Footer Text or License or Whatever Goes Here I guess</p>
 			</div>
 		</footer>

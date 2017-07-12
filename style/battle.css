@@ -220,23 +220,27 @@ body {
 	width: 60%;	
 	margin-top: 2em;
 	margin-bottom: 2em;
+	padding: 0em;
 	color: #FFF;
 	background: #000;
 	border: solid 0.1667em #000;
 	border-radius: 0.4967em;
 	text-align: left;
+	line-height: 1.25em;
+	font-size: 12pt;
 	font-family: press-start-k;
 	box-shadow: none;
 }
 
 .prompt > h1 {
 	margin: auto;
-	margin-bottom: 1.5em;
+	margin-bottom: .5em;
 	padding: 1em;
 	padding-top: .5em;
 	padding-bottom: .5em;
 	color: #000;
 	background-color: #FFF;
+	outline: solid 2px #FFF;
 	text-align: center;
 	font-weight: normal;
 	font-size: 1em;
@@ -246,7 +250,6 @@ body {
 .prompt > p {
 	padding-left: 1.5em;
 	padding-right: 1.5em;
-
 }
 
 .blog {
