@@ -21,21 +21,21 @@ var archiveURL = "archive.html";
 var aboutURL = "about.html";
 var extrasURL = "extras.html";
 
+/*
 var banner = "ui/battle_header.png";
 var nav_first = "ui/battle_first.png";
 var nav_back = "ui/battle_back.png";
 var nav_next = "ui/battle_next.png";
 var nav_last = "ui/battle_last.png";
 var nav_divider = "ui/battle_divider.png";
+*/
 
-/*
 var banner = "ui/thread_header.png";
 var nav_first = "ui/nav_first.png";
 var nav_back = "ui/nav_back.png";
 var nav_next = "ui/nav_next.png";
 var nav_last = "ui/nav_last.png";
 var nav_divider = "ui/nav_divider.png";
-*/
 
 var a = parseInt(getVariable('a'));
 var p = parseInt(getVariable('p'));
