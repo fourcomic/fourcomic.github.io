@@ -159,6 +159,16 @@ ul, li {
 	height: auto;
 }
 
+.error {
+	margin: auto;
+	margin-top: 5em;
+	margin-bottom: 5em;
+	color: #FFF;
+	text-shadow: 0px 0px 4px #000, 0px 0px 4px #000, 0px 0px 4px #000, 0px 0px 4px #000;
+	font-size: 1.5em;
+	text-align: center;
+}
+
 .text::before, .text-aubrey::before, .quote::before, .prompt::before {
 	position: absolute;
 	content: " ";
@@ -341,10 +351,10 @@ ul, li {
 
 .footer {
 	margin: auto;
-	padding: 0.5em;
+	padding: 1em;
 	text-align: center;
-	font-weight: bold;
-	font-family: comming-soon;
+	font-size: 0.8333em;
+	font-family: montserrat;
 	background: #FFF;
 }
 
@@ -354,6 +364,14 @@ ul, li {
 
 .hide {
 	display: none !important;
+}
+
+/*---------------------*/
+/* COLOUR DEFINITIONS: */
+/*---------------------*/
+
+.text-orange {
+	color: #F2A433;
 }
 
 /*---------------------*/

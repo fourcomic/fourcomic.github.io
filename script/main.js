@@ -8,7 +8,7 @@
 // ---- UPDATE THESE VALUES: ----
 
 var lastAct = 0; // Most recent chapter.
-var lastPage = [10, 0]; // Most recent page for each chapter.
+var lastPage = [1, 0]; // Most recent page for each chapter.
 var lastBlog = 0; // Temporary Fix. Eventually calculate most recent.
 
 // ---- UPDATE THESE VALUES: ----
@@ -109,6 +109,29 @@ $(document).ready(function(){
 	$(".spoiler-content").click(function(){
 		event.stopPropagation();
 	});
+});
+
+// Loads CSS, Page, and Blog Content
+$(document).ready(function(){
+
+	// Special handling for S variable. Acts as string for HTML.
+	
+	$(".content").load("page/Act_" + a + "/" + p + ".html", function( response, status, xhr ){
+		if ( status == "error") {
+			disqusIdentifier = "Zone -1";
+			$( ".content" ).html('<div class="error"><img src="ui/404.png"><br><div>The referenced page cannot be found.</div><div style="font-size: 0.75em;">' + xhr.status + ' ' + xhr.statusText + ' on Act: ' + a + ', Page: ' + p + ', Special: ' + s + '</div></div>');
+		}
+	});
+	
+	$(".blog").load("blog/" + a + "/" + lastBlog + ".html", function( response, status, xhr ){
+		// alert ("Blog Loaded");
+		if ( status == "error") {
+			$(".blog-wrapper").addClass("hide");
+			// alert ("Blog Error");
+		}
+	});
+
+	//$("#comment-title").html("Suggestion Box: (" + disqusIdentifier + ")");
 });
 
 // Get PHP-Style Queary Variables from URL
