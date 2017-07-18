@@ -87,22 +87,26 @@ ul, li {
 	list-style-type: none;
 }
 
+.wrapper {
+	margin: auto;
+	max-width: 1000px;
+}
+
+.content {
+	margin: auto;
+}
+
 .banner {
 	margin: auto;
 	text-align: center;
 	width : 40%;
 }
 
-.content {
-	margin: auto;
-	max-width: 1000px;
-}
-
 .nav-bar {
 	margin: auto;
 	margin-top: .5em;
 	margin-bottom: .5em;
-	width: 70%;
+	width: 80%;
 	height: auto;
 	text-align: center;
 	vertical-align: middle;
@@ -163,8 +167,10 @@ ul, li {
 	margin: auto;
 	margin-top: 5em;
 	margin-bottom: 5em;
+	max-width: 42.5%;
+	height: auto;
 	color: #FFF;
-	text-shadow: 0px 0px 4px #000, 0px 0px 4px #000, 0px 0px 4px #000, 0px 0px 4px #000;
+	text-shadow: 2px 2px 1px #000;
 	font-size: 1.5em;
 	text-align: center;
 }
@@ -319,6 +325,8 @@ ul, li {
 }
 
 .blog-wrapper {
+	display: none;
+
 	margin: auto;
 	margin-top: 1em;
 	margin-bottom: 2em;
@@ -346,7 +354,7 @@ ul, li {
 }
 
 .preloader {
-	display: none;
+	display: none !important;
 }
 
 .footer {
@@ -359,20 +367,42 @@ ul, li {
 }
 
 .sidebar {
-
+	display: none;
 }
 
 .hide {
 	display: none !important;
 }
 
-/*---------------------*/
-/* COLOUR DEFINITIONS: */
-/*---------------------*/
+/*-------------------*/
+/* TEXT DEFINITIONS: */
+/*-------------------*/
 
-.text-orange {
-	color: #F2A433;
-}
+/* Text Colors */
+.text-blue { color: #367ABD; }
+.text-light-blue { color: #4EB7D9; }
+
+.text-green { color: #88C542; }
+.text-light-green { color: #B2EDCE; }
+
+.text-magenta { color: #EC4A94; }
+.text-light-magenta { color: #FFDAF4; }
+
+.text-orange { color: #F2A433; }
+.text-light-orange { color: #FFCB4F; }
+
+/* Text Sizes */
+.size-xxs { font-size: 0.5em; }
+.size-xs { font-size: 0.6667em; }
+.size-s { font-size: 0.8333em; }
+.size-l { font-size: 1.3333em; }
+.size-xl { font-size: 1.6667em; }
+.size-xxl { font-size: 2em; }
+
+/* Text Alignment */
+.align-left { text-align: left; }
+.align-center { text-align: center; }
+.align-right { text-align: right; }
 
 /*---------------------*/
 /* LAYOUT DEFINITIONS: */
@@ -389,10 +419,6 @@ ul, li {
 @media (max-width: 300px) { body { font-size: 7.3333pt; } }
 @media (max-width: 200px) { body { font-size: 6.6667pt; } }
 @media (max-width: 100px) { body { font-size: 6pt; } }
-
-/* Content and Container Alignment */
-.left { margin: 0; }
-.center { margin: auto; }
 
 /* Floats and Clears */
 .float-left { float: left; }
