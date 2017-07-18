@@ -11,10 +11,12 @@
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="style/normalize.css">
 	<link rel="stylesheet" type="text/css" href="style/main.css">
-	<link rel="stylesheet" type="text/css" href="style/battle.css">	
 
 	<!-- Javascript -->
-	<script type="text/javascript">var page = "index";</script>
+	<script type="text/javascript">
+		var page = "index";
+		var pURL = "pages/Act_0/Updoot_0/0.html"
+	</script>
 	<script type="text/javascript" src="script/jquery-3.2.1.js"></script>
 	<script type="text/javascript" src="script/main.js"></script>
 
@@ -24,8 +26,6 @@
 	<!-- Preloads and caches all image assets -->
 	<div class="preloader">
 		<img src="ui/wallBG.png">
-		<img src="ui/dialogue.png" width="1" height="1" alt="">
-		<img src="ui/image.png" width="1" height="1" alt="">
 		<img src="image/Act_0/Updoot_0/thread_logo.png" width="1" height="1" alt="">
 		<img src="ui/nav_first.png" width="1" height="1" alt="">
 		<img src="ui/nav_back.png" width="1" height="1" alt="">
@@ -34,7 +34,7 @@
 	</div>
 
 	<!-- Main Content Frame -->
-	<section>
+	<section class="wrapper">
 
 		<!-- Banner Zone -->
 		<header class="w1000">
@@ -48,42 +48,24 @@
 			<script type="text/javascript" src="script/navbar.js"></script>
 		</div>
 
-		<!-- Page Content -->
-		<div class="content">
-		
-			<img class="panel" src="image\Act_0\Updoot_10\battlestart.png">
+		<!--
+		 ██████╗ ██████╗ ███╗   ██╗████████╗███████╗███╗   ██╗████████╗   
+		██╔════╝██╔═══██╗████╗  ██║╚══██╔══╝██╔════╝████╗  ██║╚══██╔══╝██╗
+		██║     ██║   ██║██╔██╗ ██║   ██║   █████╗  ██╔██╗ ██║   ██║   ╚═╝
+		██║     ██║   ██║██║╚██╗██║   ██║   ██╔══╝  ██║╚██╗██║   ██║   ██╗
+		╚██████╗╚██████╔╝██║ ╚████║   ██║   ███████╗██║ ╚████║   ██║   ╚═╝
+		 ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═══╝   ╚═╝
+		 -->
+		<div class="w1000">
+		<!-- +=======================================+ -->
+		<!-- | PASTE CONTENT TO TEST BELOW THIS LINE |-->
+		<!-- +=======================================+ -->
 
-			<div class="quote-wrapper">
-				<div class="quote">
-					<h1>Somebirdy</h1>
-					<h2>July 7th 2017</h1>
-					<hr>
-					<p>...once told me the world was gonna roll me. I ain't the sharpest beak in the nest.</p>
-				</div>
-			</div>
-			
-			<div class="text-aubrey-wrapper">
-				<div class="text-aubrey">
-					<h1>Aubrey</h1>
-					<p>Lorem ipsum quick brown fox jumps over the best of times it was the worst of etc etc etc?</p>
-				</div>
-			</div>
 
-			<div class="text-wrapper">	
-				<div class="text">
-					<h1>System</h1>
-					<p>An echo of a memory permeates the void and shit. It's pretty god damned weird and cool. Check it down, yo. The shit is bonkers as hell.</p>
-				</div>
-			</div>
 
-			<div class="prompt-wrapper">	
-				<div class="prompt">
-					<h1>FILL IN THE BLANKS...</h1>
-					<p>My name is ***** **. I'm 11 years old.<br>My favorite color is ____ and my favorite subject is ____.</p>
-					<p>Last week, my parents took me and my best friend, ____, to the movies. No-one believes me—not even my parents—but something strange happened in the theater that day...</p>
-				</div>
-			</div>
-
+		<!-- +=======================================+ -->
+		<!-- | PASTE CONTENT TO TEST ABOVE THIS LINE | -->
+		<!-- +=======================================+ -->
 		</div>
 
 		<!-- Lower Navbar -->
@@ -91,32 +73,27 @@
 			<script type="text/javascript" src="script/navbar.js"></script>
 		</nav>
 
-		<!-- 2 Column -->
-		<div>
-
-			<!-- Sidebar -->
-			<div class="sidebar">
-				
+		<!-- Blog Zone -->
+		<div class="blog-wrapper">
+			<div class="blog">
+				<h1>Act 0, Page #:</h1>
+				<h2>July Whatever 2017</h2>
+				<p>Author comments go here. But this is just a test page. It's mostly just for show, so you can get a feel for spacing and all that I guess? Eventually, there will be a Disqus Powered comment box below this. Unfortunately That 'fuge person cannot be arsed to implement it yet. What a gosh darn slacker!</p>
 			</div>
+		</div>
+	
+	</section>
 
-			<!-- Blog Zone -->
-			<div class="blog-wrapper">
-				<div class="blog">
-					<h1>Act 0, Page #:</h1>
-					<h2>July 7th 2017</h2>
-					<p>Author comments goes here.</p>
-				</div>
+	<!-- Banner Zone -->
+	<footer>
+		<div class="footer">
+		
+			<!-- License and Legal Crap -->
+			<div id="license">
+				<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Four</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">PREFERRED AUTHOR NAME GOES HERE</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 			</div>
 
 		</div>
-
-		<!-- Banner Zone -->
-		<footer>
-			<div class="footer">
-				<p>Footer Text or License or Whatever Goes Here I guess</p>
-			</div>
-		</footer>
-		
-	</section>
+	</footer>
 
 </body>

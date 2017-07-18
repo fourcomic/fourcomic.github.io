@@ -122,7 +122,7 @@ $(document).ready(function(){
 			$( ".content" ).html('<div class="error"><img src="ui/404.png"><br><div>The referenced page cannot be found.</div><div style="font-size: 0.75em;">' + xhr.status + ' ' + xhr.statusText + ' on Act: ' + a + ', Page: ' + p + ', Special: ' + s + '</div></div>');
 		}
 	});
-	
+/*
 	$(".blog").load("blog/" + a + "/" + lastBlog + ".html", function( response, status, xhr ){
 		// alert ("Blog Loaded");
 		if ( status == "error") {
@@ -130,7 +130,7 @@ $(document).ready(function(){
 			// alert ("Blog Error");
 		}
 	});
-
+*/
 	//$("#comment-title").html("Suggestion Box: (" + disqusIdentifier + ")");
 });
 
