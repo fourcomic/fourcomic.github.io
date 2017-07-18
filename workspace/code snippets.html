@@ -6,7 +6,9 @@
 ╚██████╗╚██████╔╝██████╔╝███████╗    ██████╔╝███████╗╚██████╔╝╚██████╗██║  ██╗███████║╚═╝
  ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝    ╚═════╝ ╚══════╝ ╚═════╝  ╚═════╝╚═╝  ╚═╝╚══════╝
 
-Copy the code blocks below any header into the "PAGE CONTENT" section of your update. -->
+Copy the code blocks below any header into your update. The area inside the <div> tags is full customizable.
+The following are just some examples of the basic layout; tweak them as necessary.
+If you need more text-boxes or such, they can always be created and added -->
 
 <!-- NARRATOR TEXTBOX: -->
 <div class="text-wrapper">	
@@ -28,7 +30,7 @@ Copy the code blocks below any header into the "PAGE CONTENT" section of your up
 <div class="quote-wrapper">
 	<div class="quote">
 		<h1>Somebirdy</h1>
-		<h2>July 7th 2017</h1>
+		<h2>July 7th 2017</h2>
 		<hr>
 		<p>...once told me the world was gonna roll me. I ain't the sharpest beak in the nest.</p>
 	</div>
@@ -38,7 +40,8 @@ Copy the code blocks below any header into the "PAGE CONTENT" section of your up
 <div class="prompt-wrapper">	
 	<div class="prompt">
 		<h1>FILL IN THE BLANKS...</h1>
-		<p>My name is ***** **. I'm 11 years old.<br>My favorite color is ____ and my favorite subject is ____.</p>
+		<p>My name is ***** **. I'm 11 years old.</p>
+		<p>My favorite color is ____ and my favorite subject is ____.</p>
 		<p>Last week, my parents took me and my best friend, ____, to the movies. No-one believes me—not even my parents—but something strange happened in the theater that day...</p>
 	</div>
 </div>
@@ -53,6 +56,11 @@ Copy the code blocks below any header into the "PAGE CONTENT" section of your up
 ╚═╝      ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚═╝╚═╝  ╚═══╝ ╚═════╝
 
 Basic Reference for HTML text and paragraph formatting. These go within the innermost <div> tags of a Code Block.
+Separate each line by making it a separate paragraph, in it's own <p> tags (this puts spacing between lines).
+<h1> tags are used for bold headers for each textbox, and <h2> tags are for dates or italic subheaders.
+You can use <br> tags to skip to the next line without spacing, but try not to use them; it gets crowded!
+
+P.S. Remember to close your tags!
 
 NOTE 1: You can nest most any tag within other tags.
 	EXAMPLE: <p>This paragraph has <b>bold text</b> in it.<p>
@@ -71,8 +79,8 @@ NOTE 2: You can apply multiple style classes to the same element.
 <u>UNDERLINED INLINE TEXT</u>
 <s>STRIKETHROUGH INLINE TEXT</s>
 
-<p>LINE<br>BREAK</p>
-<p>HORIZONTAL<hr>LINE</p>
+<br> LINE BREAK
+<hr> HORIZONTAL LINE
 
 <!-- Text Alignment -->
 <span class="align-left">LEFT ALIGNED TEXT</span>
@@ -116,7 +124,10 @@ NOTE 2: You can apply multiple style classes to the same element.
 ██║ ╚═╝ ██║╚██████╔╝██████╔╝██║██║     ██║███████╗██║  ██║███████║╚═╝
 ╚═╝     ╚═╝ ╚═════╝ ╚═════╝ ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝
 
-Copy these lines into the "PAGE-SPECIFIC MODIFIERS" section of your update. -->
+Copy these lines into the topmost area of your update.
+They can override nav button link targets for shennanigans,
+change the appearance of the page (as with Battle Mode),
+and more page-specific tweaks and features as needed -->
 
 <!-- BATTLE-MODE STYLE -->
 <link rel="stylesheet" type="text/css" href="style/battle.css">
