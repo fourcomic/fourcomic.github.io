@@ -57,7 +57,7 @@ body {
 }
 
 /* Top Tape Overlays */
-.text::before, .text-aubrey::before, .quote::before, .prompt::before {
+.text::before, .text-aubrey::before, .text-grey::before, .quote::before, .prompt::before {
 	display: none;
 	background: none;
 }
@@ -65,6 +65,7 @@ body {
 .text {
 	position: relative;
 	margin: auto;
+	line-height: 1.5em;
 	padding: 1.5em;
 	border: solid 0.3333em #0FF4C6;
 	border-radius: .25em;
@@ -126,7 +127,7 @@ body {
 
 .text-tutorial {
 	position: relative;
-	/*text-align: center;*/
+	line-height: 1.5em;
 	margin: auto;
 	padding: 2em;	
 	border: solid 0.3333em #fff;
@@ -148,6 +149,72 @@ body {
 }
 
 
+/* DEX STYLES */
+
+.text-dex-wrapper {
+	position: relative;
+	width: 80%;
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	color: #fff;
+	background: #000;
+	border: solid 0.1667em #000;
+	border-radius: 0.4967em;
+	font-family: press-start-k;
+	box-shadow: none;
+}
+
+.text-dex {
+	position: relative;
+	margin: auto;
+	line-height: 1.25em;
+	padding: 1.5em;
+	border: solid 0.3333em #FFF07C;
+	border-radius: .25em;
+}
+
+
+.text-dex > h1 {
+	margin: auto;
+	width: auto;
+	color: #FFF07C;
+	text-align: center;
+	font-family: press-start-k;
+	font-size: 1em;
+	line-height: 1.5em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.text-dex > h2 {
+	margin: auto;
+	width: auto;
+	color: #FFF07C;
+	text-align: center;
+	font-family: press-start-k;
+	font-size: 1em;
+	line-height: 1.5em;
+	font-weight: normal;
+	text-transform: capitalize;
+}
+
+.text-dex > h1::before {
+	content: "** "
+}
+
+.text-dex > h1::after {
+	content: " **"
+}
+
+
+.text-dex > hr {
+	border: none;
+	border-top: 4px dotted #FFF;
+	margin-top: .25em;
+	margin-bottom: 1em;
+}
+
 /* BATTLE LOG STYLES */
 
 .text-batlog-wrapper {
@@ -168,6 +235,7 @@ body {
 	position: relative;
 	margin: auto;
 	text-align: center;
+	line-height: 1.25em;
 	padding: 1.5em;
 	border: solid 0.3333em #48639C;
 	border-radius: .25em;
@@ -213,6 +281,7 @@ body {
 .text-batmenu {
 	position: relative;
 	margin: auto;
+	line-height: 1.25em;
 	padding: 1.5em;
 	border: solid 0.3333em #F3C98B;
 	border-radius: .25em;
@@ -279,6 +348,49 @@ body {
 }
 
 .text-aubrey > h1::after {
+	content: "]"
+}
+
+/* RAHASYA TEXT */
+
+.text-grey {
+	position: relative;
+	margin: auto;
+	padding: 2em;	
+	border: solid 0.3333em #808080;
+	border-radius: 2em;
+}
+
+.text-grey-wrapper {
+	position: relative;
+	width: 80%;	
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	color: #FFF;
+	background: #000;
+	border: solid 0.1667em #000;
+	border-radius: 2.1667em;
+	font-family: press-start-k;
+	box-shadow: none;
+}
+
+.text-grey > h1 {
+	margin: auto;
+	width: auto;
+	color: #808080;
+	text-align: left;
+	font-family: press-start-k;
+	font-size: 1em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.text-grey > h1::before {
+	content: "["
+}
+
+.text-grey > h1::after {
 	content: "]"
 }
 

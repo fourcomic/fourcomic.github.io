@@ -175,7 +175,7 @@ ul, li {
 	text-align: center;
 }
 
-.text::before, .text-aubrey::before, .quote::before, .prompt::before {
+.text::before, .text-aubrey::before, .text-grey::before, .quote::before, .prompt::before {
 	position: absolute;
 	content: " ";
 	width: 35.2vw;
