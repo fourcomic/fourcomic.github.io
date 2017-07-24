@@ -42,6 +42,7 @@
 a {
 	color: #CCF;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 a:visited {
@@ -423,6 +424,12 @@ ul, li {
 
 .text-orange { color: #F2A433; }
 .text-light-orange { color: #FFCB4F; }
+
+.text-red { color: #E74C3C; }
+
+.text-yellow {color: #F7DC6F;}
+
+.text-iceblue {color: #85C1E9;}
 
 /* Text Sizes */
 .size-xxs { font-size: 0.5em; }

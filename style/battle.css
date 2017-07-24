@@ -1,4 +1,3 @@
-
 @font-face {
 	font-family: press-start-k;
 	src: url("../font/PressStartK.ttf");
@@ -67,15 +66,15 @@ body {
 	position: relative;
 	margin: auto;
 	padding: 1.5em;
-	border: solid 0.3333em #85E9BE;
+	border: solid 0.3333em #0FF4C6;
 	border-radius: .25em;
 }
 
 .text > h1 {
 	margin: auto;
 	width: auto;
-	color: #85E9BE;
-	text-align: left;
+	color: #0FF4C6;
+	text-align: center;
 	font-family: press-start-k;
 	font-size: 1em;
 	font-weight: normal;
@@ -103,6 +102,144 @@ body {
 	font-family: press-start-k;
 	box-shadow: none;
 }
+
+/* BATTLE TUTORIAL STYLES */
+
+.text-tutorial > h1 {
+	margin: auto;
+	width: auto;
+	color: #fff;
+	text-align: center;
+	font-family: press-start-k;
+	font-size: 1em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.text-tutorial > h1::before {
+	content: "["
+}
+
+.text-tutorial > h1::after {
+	content: "]"
+}
+
+.text-tutorial {
+	position: relative;
+	/*text-align: center;*/
+	margin: auto;
+	padding: 2em;	
+	border: solid 0.3333em #fff;
+	border-radius: 2em;
+}
+
+.text-tutorial-wrapper {
+	position: relative;
+	width: 80%;	
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	color: #fff;
+	background: #000;
+	border: solid 0.1667em #000;
+	border-radius: 2.1667em;
+	font-family: press-start-k;
+	box-shadow: none;
+}
+
+
+/* BATTLE LOG STYLES */
+
+.text-batlog-wrapper {
+	position: relative;
+	width: 80%;
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	color: #fff;
+	background: #000;
+	border: solid 0.1667em #000;
+	border-radius: 0.4967em;
+	font-family: press-start-k;
+	box-shadow: none;
+}
+
+.text-batlog {
+	position: relative;
+	margin: auto;
+	text-align: center;
+	padding: 1.5em;
+	border: solid 0.3333em #48639C;
+	border-radius: .25em;
+}
+
+
+.text-batlog > h1 {
+	margin: auto;
+	width: auto;
+	color: #48639C;
+	text-align: center;
+	font-family: press-start-k;
+	font-size: 1em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.text-batlog > h1::before {
+	content: "** "
+}
+
+.text-batlog > h1::after {
+	content: " **"
+}
+
+
+/* BATTLE MENU STYLES */
+
+.text-batmenu-wrapper {
+	position: relative;
+	width: 60%;
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	color: #fff;
+	background: #000;
+	border: solid 0.1667em #000;
+	border-radius: 0.4967em;
+	font-family: press-start-k;
+	box-shadow: none;
+}
+
+.text-batmenu {
+	position: relative;
+	margin: auto;
+	padding: 1.5em;
+	border: solid 0.3333em #F3C98B;
+	border-radius: .25em;
+}
+
+
+.text-batmenu > h1 {
+	margin: auto;
+	width: auto;
+	color: #F3C98B;
+	text-align: center;
+	font-family: press-start-k;
+	font-size: 1em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.text-batmenu > h1::before {
+	content: "** "
+}
+
+.text-batmenu > h1::after {
+	content: " **"
+}
+
+
+/* AUBREY TEXT */
 
 .text-aubrey {
 	position: relative;
